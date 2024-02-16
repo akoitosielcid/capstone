@@ -16,6 +16,9 @@ $routes->group('admin', static function($routes){
     $routes->get('announcements', 'Admin\AnnouncementController::index');
     $routes->get('add-announcements', 'Admin\AnnouncementController::create');
     $routes->post('store', 'Admin\AnnouncementController::store');
+    $routes->get('scholars', 'Admin\ScholarInfoController::index');
+    $routes->get('add-scholars', 'Admin\ScholarInfoController::create');
+    $routes->post('store-scholar', 'Admin\ScholarInfoController::store');
     // $routes->get('edit/(:num)', 'Products::edit/$1');
     // $routes->post('update', 'Products::update');
     // $routes->get('delete/(:num)', 'Products::delete/$1');

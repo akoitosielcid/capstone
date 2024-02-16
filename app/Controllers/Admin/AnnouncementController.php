@@ -24,9 +24,14 @@ class AnnouncementController extends BaseController
 
     }
     public function store(){
+        helper('date');
+        $currentDate = new \DateTime();
+        $formattedDate = $currentDate->format('Y-m-d H:i:s');
+        $date_posted['date_posted'] = $formattedDate;
+
+
         $announcement = new AnnouncementModel();
         $announcement_description = $this->request->getVar('announcement_desc');
-        $date_posted = $this->request->getVar('date_posted');
         //kinukuha ang variable
 
         $announcement->save([

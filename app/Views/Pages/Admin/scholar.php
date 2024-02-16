@@ -47,56 +47,43 @@
                 <div class="container-fluid">
                     <a href="add-scholars">
                         <button type="button" class="btn btn-success">
-                            <i class="fas fa-plus"></i> Add New Announcement
+                            <i class="fas fa-plus"></i> Add New Scholar
                         </button>
                     </a>
 
 
-                    <table class="table">
-                        <thead>
-                            <tr>
+                    <table class="table table-striped table-bordered table-hover">
+                    <thead class="table-primary">
+                        <tr>
                             <th scope="col">#</th>
-                            <th scope="col">First Name</th>
-                            <th scope="col">Middle Name</th>
-                            <th scope="col">Last Name</th>
-                            <th scope="col">Suffix</th>
+                            <th scope="col">Name</th>
                             <th scope="col">Age</th>
                             <th scope="col">Gender</th>
                             <th scope="col">Address</th>
-                            <th scope="col">Scholar Region</th>
-                            <th scope="col">Present Address</th>
-                            <th scope="col">Birthdate</th>
                             <th scope="col">Email</th>
-                            <th scope="col">Phone Number</th>
                             <th scope="col">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                        </tr>
+                    </thead>
+                <tbody>
                     <?php $i = 1; ?>
                     <?php foreach ($scholar_info as $s): ?>
                         <tr>
                             <td><?= $i ?></td>
-                            <td><?= $s['firstname'] ?></td>
-                            <td><?= $s['middlename'] ?></td>
-                            <td><?= $s['lastname'] ?></td>
-                            <td><?= $s['suffix'] ?></td>
+                            <td><?= $s['firstname'] ?> <?= $s['lastname'] ?></td>
                             <td><?= $s['age'] ?></td>
                             <td><?= $s['gender'] ?></td>
-                            <td><?= $s['address'] ?></td>
-                            <td><?= $s['scholar_region'] ?></td>
-                            <td><?= $s['presentaddress'] ?></td>
-                            <td><?= $s['birthdate'] ?></td>
+                            <td><?= $s['street'] . ', ' . $s['barangay'] . ', ' . $s['city'] . ', ' . $s['province'] ?></td>
                             <td><?= $s['email'] ?></td>
-                            <td><?= $s['phone_num'] ?></td>
                             <td>
-                                <a href="/scholar/edit/<?= $s['scholar_id'] ?>" class="btn btn-primary">Edit</a>
-                                <a href="/scholar/delete/<?= $s['scholar_id'] ?>" class="btn btn-danger">Delete</a>
+                                <a href="/scholar/edit/<?= $s['scholar_id'] ?>" class="btn btn-sm btn-primary">Edit</a>
+                                <a href="/scholar/delete/<?= $s['scholar_id'] ?>" class="btn btn-sm btn-danger">Delete</a>
                             </td>
                         </tr>
                         <?php $i++; ?>
                     <?php endforeach; ?>
-                        </tbody>  
-                    </table>
+                </tbody>  
+            </table>
+                        
                 </div><!-- /.container-fluid -->
             </section>
         </div>

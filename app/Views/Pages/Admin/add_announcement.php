@@ -75,10 +75,11 @@
                                                     <option value="Parent and Scholar">Parent and Scholar</option>
                                                 </select>
                                             </div>
-                                            <div class="mb-3">
+                                            <div class="mb-3" style="display: none;">
                                                 <label for="date_posted" class="form-label">Date Posted:</label>
                                                 <input type="date" class="form-control" id="date_posted" name="date_posted">
                                             </div>
+
                                             <button class="btn btn-info" name="save" type="submit">
                                                 <span class="fas fa-save me-2"></span>Save
                                             </button>
