@@ -13,7 +13,7 @@
                         <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
+                        <a href="#" class="d-block">Pangalan</a>
                     </div>
                 </div>
 
@@ -32,14 +32,24 @@
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-
                         <li class="nav-item">
                             <a href="announcements" class="nav-link">
                                 <i class="nav-icon far fa-bell"></i>
                                 <p>
                                     Announcements
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                 
+                </nav>
+                <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item">
+                            <a href="scholars" class="nav-link">
+                                <i class="nav-icon far fa-bell"></i>
+                                <p>
+                                    Scholars
                                 </p>
                             </a>
                         </li>

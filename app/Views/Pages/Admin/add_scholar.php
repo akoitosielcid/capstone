@@ -36,7 +36,7 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1 class="m-0">Announcements</h1>
+                                <h1 class="m-0">Scholar</h1>
                             </div><!-- /.col -->
                             <div class="col-sm-6">
                                 <ol class="breadcrumb float-sm-right">
@@ -51,13 +51,13 @@
 
                 <!-- Main content -->
                 <section class="content">
-                <form class="form-horizontal" action="<?= base_url('admin/store') ?>" method="POST">
+                <form class="form-horizontal" action="<?= base_url('admin/scholar') ?>" method="POST">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h3 class="card-title">Post New Announcement</h3>
+                                        <h3 class="card-title">Add New Scholar</h3>
                                     </div>
                                     <!-- /.card-header -->
                                     <div class="card-body">
@@ -74,10 +74,6 @@
                                                     <option value="Parent">Parent</option>
                                                     <option value="Parent and Scholar">Parent and Scholar</option>
                                                 </select>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="date_posted" class="form-label">Date Posted:</label>
-                                                <input type="date" class="form-control" id="date_posted" name="date_posted">
                                             </div>
                                             <button class="btn btn-info" name="save" type="submit">
                                                 <span class="fas fa-save me-2"></span>Save
