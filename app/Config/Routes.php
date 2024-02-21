@@ -22,7 +22,7 @@ $routes->group('admin', static function($routes){
 
     $routes->get('scholars', 'Admin\ScholarInfoController::index');
     $routes->get('add-scholars', 'Admin\ScholarInfoController::create');
-    $routes->post('store-scholars', 'Admin\ScholarInfoController::store');
+    $routes->post('store-scholar', 'Admin\ScholarInfoController::store');
     $routes->get('edit-scholar/(:num)', 'Admin\ScholarInfoController::edit/$1');
     $routes->post('update-scholar', 'Admin\ScholarInfoController::update');
     $routes->get('delete-scholar/(:num)', 'Admin\ScholarInfoController::delete/$1');

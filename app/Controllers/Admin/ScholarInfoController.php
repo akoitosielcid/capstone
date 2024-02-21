@@ -50,7 +50,7 @@ class ScholarInfoController extends BaseController
             $telephone_number = $this->request->getVar('telephone_number');
 
     // Save data to the database
-    $scholarinfo->save([
+    $this->scholar_info->save([
         'firstname' => $first_name,
         'middlename' => $middle_name,
         'lastname' => $last_name,
