@@ -1,0 +1,281 @@
+CRITICAL - 2024-02-20 08:46:01 --> ErrorException: Undefined property: App\Controllers\Admin\AnnouncementController::$product
+in APPPATH\Controllers\Admin\AnnouncementController.php on line 48.
+ 1 APPPATH\Controllers\Admin\AnnouncementController.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin\\AnnouncementController::$product', 'C:\\laragon\\www\\capstone\\app\\Controllers\\Admin\\AnnouncementController.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 08:48:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(50): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 08:52:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(50): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 08:53:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(50): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 08:58:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(49): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 08:58:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(49): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:00:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/add_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/add_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/add_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(49): view('admin/add_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:01:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(49): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('4')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:07:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(49): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('4')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:07:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(49): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('4')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:40:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(49): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('4')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:43:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(50): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:44:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(50): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:45:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(50): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:45:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(50): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:45:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(50): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:49:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(50): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:49:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(50): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('3')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:49:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(50): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:50:12 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Admin\AnnouncementController.php on line 50.
+ 1 APPPATH\Controllers\Admin\AnnouncementController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\capstone\\app\\Controllers\\Admin\\AnnouncementController.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('7')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:50:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(50): view('admin/edit_announcement')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:52:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(52): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:52:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(52): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:53:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(52): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:53:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(52): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:57:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(52): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('4')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:58:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(60): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('4')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:58:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(60): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('4')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 09:58:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(60): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('4')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 10:06:06 --> Error: Class "App\Controllers\Admin\AnnouncementModel" not found
+in APPPATH\Controllers\Admin\AnnouncementController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Admin\AnnouncementController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 10:07:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(53): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('5')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 10:18:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/edit_announcement.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit_announcement.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/edit_announcement', [], true)
+ 3 APPPATH\Controllers\Admin\AnnouncementController.php(53): view('admin/edit_announcement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\AnnouncementController->edit('3')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AnnouncementController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

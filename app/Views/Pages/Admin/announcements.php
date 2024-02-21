@@ -7,7 +7,7 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+            <img class="animation__shake" src="<?= base_url('admin/dist/img/AdminLTELogo.png') ?>" alt="AdminLTELogo" height="60" width="60">
         </div>
 
         <!-- Navbar -->
@@ -50,21 +50,45 @@
                             <i class="fas fa-plus"></i> New Announcement
                         </button>
                     </a>
-
+                    <?php if(session()->getFlashdata("success")): ?>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            
+                <strong>
+                    <?= session()->getFlashdata("success") ?>
+                </strong>
+            </div>
+        <?php endif; ?>
 
                     <table class="table">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Body</th>
-                                <th scope="col">Status</th>
+                                <th scope="col">Announcement</th>
+                                <th scope="col">Date Posted</th>
                                 <th scope="col">Author</th>
                                 <th scope="col">Action</th>
+
                             </tr>
                         </thead>
                         <tbody>
-
-                        </tbody>
+  <tbody>
+                    <?php $i = 1; ?>
+                    <?php foreach ($announcement as $a): ?>
+                        <tr>
+                            <td><?= $i ?></td>
+                            <td><?= $a['announcement_desc'] ?></td>
+                            <td><?= $a['date_posted'] ?></td>
+                            <td><?= $a['author'] ?></td>
+                            <td>
+                                <a href="<?= base_url('admin/edit-announcement/' . $a['id_announcement']) ?>"class="btn btn-success">Edit</a>
+                                <a href="<?= base_url('admin/delete-announcement/' . $a['id_announcement']) ?>" class="btn btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                        <?php $i++; ?>
+                    <?php endforeach; ?>
+                </tbody>
+                        </tbody>  
                     </table>
                 </div><!-- /.container-fluid -->
             </section>

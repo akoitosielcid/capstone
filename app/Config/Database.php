@@ -29,7 +29,7 @@ class Database extends Config
         'hostname'     => 'localhost',
         'username'     => 'root',
         'password'     => '',
-        'database'     => 'db_scholar',
+        'database'     => 'db_owwa',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
@@ -56,7 +56,7 @@ class Database extends Config
         'password'    => '',
         'database'    => ':memory:',
         'DBDriver'    => 'SQLite3',
-        'DBPrefix'    => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
+        'DBPrefix'    => 'db_owwa',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
         'pConnect'    => false,
         'DBDebug'     => true,
         'charset'     => 'utf8',

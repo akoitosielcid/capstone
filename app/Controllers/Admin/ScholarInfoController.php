@@ -7,25 +7,28 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class ScholarInfoController extends BaseController
 {
- 
+    public function __construct(){
+        $this->scholar_info = new ScholarInfoModel();
+    }
+
     public function index()
     {
         // $model = new ScholarInfoModel();
-        $scholar_info = new ScholarInfoModel();
+        // $scholar_info = new ScholarInfoModel();
         // // Fetch all scholar information from the model
-        $data['scholar_info'] = $scholar_info->findAll();
+        $data['scholar_info'] = $this->scholar_info->findAll();
 
         // Pass the data to the view
-        return view('pages/admin/scholar',$data);
+        return view('pages/admin/scholarinfo/scholar',$data);
     }
 
     public function create(){
-        return view('pages/admin/add_scholar'); 
+        return view('pages/admin/scholarinfo/add_scholar'); 
         //Taga tawa ang views 
     }
     public function store()
     {
-        $scholarinfo = new ScholarInfoModel();
+        // $scholarinfo = new ScholarInfoModel();
     
          // Get data from the form
             $first_name = $this->request->getVar('first_name'); 
@@ -70,19 +73,52 @@ class ScholarInfoController extends BaseController
         return redirect()->to(base_url('admin/scholars'));
     }
     
-    public function deleteScholar($id)
-    {
-        // Load the ScholarInfoModel
-        // $model = new ScholarInfoModel();
 
-        // Find the scholar by ID
-        // $scholar = $model->find($id);
-
-        // if ($scholar) {
-        //     $model->delete($id);
-        //     return redirect()->to('/home')->with('success', 'Scholar deleted successfully.');
-        // } else {
-        //     return redirect()->to(site_url('/home'))->with('error', 'Scholar not found.');
-        // }
+    public function edit($id) {
+        $data['scholar_info'] = $this->scholar_info->where('scholar_id', $id)->first();
+        return view('pages/admin/scholarinfo/edit_scholar',$data); 
     }
+    
+    public function update() {
+        // $scholar_info = new ScholarInfoModel();
+        $data = [
+            'firstname' => $this->request->getVar('firstname'),
+            'middlename' => $this->request->getVar('middlename'),
+            'lastname' => $this->request->getVar('lastname'),
+            'suffix' => $this->request->getVar('suffix'),
+            'age' => $this->request->getVar('age'),
+            'gender' => $this->request->getVar('gender'),
+            'street' => $this->request->getVar('street'),
+            'barangay' => $this->request->getVar('barangay'),
+            'city' => $this->request->getVar('city'),
+            'province' => $this->request->getVar('province'),
+            'presentaddress' => $this->request->getVar('presentaddress'),
+            'birthdate' => $this->request->getVar('birthdate'),
+            'email' => $this->request->getVar('email'),
+            'phone_num' => $this->request->getVar('phone_num'),
+            'telephone_number' => $this->request->getVar('telephone_number')
+        ];
+
+        $scholar_id = $this->request->getVar('scholar_id');
+        $this->scholar_info->update($scholar_id, $data);
+
+        session()->setFlashdata("success", "Nakapag-update na tayo sa db ng isa.");
+        return redirect()->to(base_url('admin/scholars'));
+        // return view('pages/admin/scholarinfo/scholar'
+    }
+       
+    
+    public function delete($id)
+    {
+       // Delete the announcement from the database
+       $this->scholar_info->delete($id);
+        
+       // Set a success flash message
+       session()->setFlashdata("success", "Nakapag-delete na tayo sa db ng isa.");
+       
+       // Redirect to the admin/announcements page
+       return redirect()->to(base_url('admin/scholars'));
+       // return view('pages/admin/announcements');
+    }
+    
 }
