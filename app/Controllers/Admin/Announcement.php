@@ -7,11 +7,12 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class Announcement extends BaseController
 {
-    public function index()
-    {
-        return view('pages/admin/add_announcement');
 
+    public function index2()
+    {
+        return view('Pages/Admin2/New_admin/index');
     }
+  
   
 }
     
