@@ -1,33 +1,68 @@
-<script src="<?= base_url('admin/plugins/jquery/jquery.min.js') ?>"></script>
-    <!-- jQuery UI 1.11.4 -->
-    <script src="<?= base_url('admin/plugins/jquery-ui/jquery-ui.min.js') ?>"></script>
-    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-    <script>
-        $.widget.bridge('uibutton', $.ui.button)
-    </script>
-    <!-- Bootstrap 4 -->
-    <script src="<?= base_url('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
-    <!-- ChartJS -->
-    <script src="<?= base_url('admin/plugins/chart.js/Chart.min.js') ?>"></script>
-    <!-- Sparkline -->
-    <script src="<?= base_url('admin/plugins/sparklines/sparkline.js') ?>"></script>
-    <!-- JQVMap -->
-    <script src="<?= base_url('admin/plugins/jqvmap/jquery.vmap.min.js') ?>"></script>
-    <script src="<?= base_url('admin/plugins/jqvmap/maps/jquery.vmap.usa.js') ?>"></script>
-    <!-- jQuery Knob Chart -->
-    <script src="<?= base_url('admin/plugins/jquery-knob/jquery.knob.min.js') ?>"></script>
-    <!-- daterangepicker -->
-    <script src="<?= base_url('admin/plugins/moment/moment.min.js') ?>"></script>
-    <script src="<?= base_url('admin/plugins/daterangepicker/daterangepicker.js') ?>"></script>
-    <!-- Tempusdominus Bootstrap 4 -->
-    <script src="<?= base_url('admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js') ?>"></script>
-    <!-- Summernote -->
-    <script src="<?= base_url('admin/plugins/summernote/summernote-bs4.min.js') ?>"></script>
-    <!-- overlayScrollbars -->
-    <script src="<?= base_url('admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') ?>"></script>
-    <!-- AdminLTE App -->
-    <script src="<?= base_url('admin/dist/js/adminlte.js') ?>"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="<?= base_url('admin/dist/js/demo.js') ?>"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="<?= base_url('admin/dist/js/pages/dashboard.js') ?>"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<script src="<?php echo base_url("public/res/assets/adminMenu//res/assets/js/core/jquery.min.js")?>"></script>
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/core/popper.min.js")?>"></script>
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/core/bootstrap-material-design.min.js")?>">
+</script>
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/plugins/perfect-scrollbar.jquery.min.js")?>">
+</script>
+<!-- Plugin for the momentJs  -->
+<script src="https://cdn.jsdelivr.net/npm/wysihtml5@0.5.0/dist/wysihtml5-0.5.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-wysiwyg/0.3.3/bootstrap3-wysihtml5.min.js"
+  integrity="sha512-XiYIoVJlhi4eG/3R6pdLS2aBa1NiWEQdEQVMT6WpkKbmHN+NTUWbz4nZBtcmIeeoq08iC8PtPw8WxYRzHVGWYA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/plugins/moment.min.js")?>"></script>
+<!--  Plugin for Sweet Alert -->
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/plugins/sweetalert2.js")?>"></script>
+<!-- Forms Validations Plugin -->
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/plugins/jquery.validate.min.js")?>"></script>
+<!-- Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/plugins/jquery.bootstrap-wizard.js")?>">
+</script>
+<!--  Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/plugins/bootstrap-selectpicker.js")?>"></script>
+<!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/plugins/bootstrap-datetimepicker.min.js")?>">
+</script>
+<!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/plugins/jquery.dataTables.min.js")?>"></script>
+<!--  Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/plugins/bootstrap-tagsinput.js")?>"></script>
+<!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/plugins/jasny-bootstrap.min.js")?>"></script>
+<!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/plugins/fullcalendar.min.js")?>"></script>
+<!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/plugins/jquery-jvectormap.js")?>"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/plugins/nouislider.min.js")?>"></script>
+<!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+<!-- Library for adding dinamically elements -->
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/plugins/arrive.min.js")?>"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Chartist JS -->
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/plugins/chartist.min.js")?>"></script>
+<!--  Notifications Plugin    -->
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/plugins/bootstrap-notify.js")?>"></script>
+<!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/js/material-dashboard.js?v=2.1.1")?>"
+  type="text/javascript"></script>
+<!-- Material Dashboard DEMO methods, don't include it in your project! -->
+<script src="<?php echo base_url("public/res/assets/adminMenu/assets/demo/demo.js")?>"></script>
+
+
+
+<script type="text/javascript" language="javascript" src="<?php echo base_url("/input-mask/jquery.inputmask.js")?>">
+</script>
+<script type="text/javascript" language="javascript"
+  src="<?php echo base_url("/input-mask/jquery.inputmask.date.extensions.js")?>"></script>
+<script type="text/javascript" language="javascript"
+  src="<?php echo base_url("/input-mask/jquery.inputmask.extensions.js")?>"></script>
+
+
+<script src="<?php echo base_url("public/res/assets/js/summernote/summernote-bs4.js")?>"></script>

@@ -1,29 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<?= $this->include('components/admin/head'); ?>
 
-<body class="hold-transition sidebar-mini layout-fixed">
-    <div class="wrapper">
+<?= $this->include('Components/admin/head'); ?>
+<body>
+    <?php
+$data['page'] = "modstudent"; // Set the 'page' variable in the $data array
+echo view('Components/admin/navbar', $data); // Pass the $data array to the view
 
-        <!-- Preloader -->
-        <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="<?= base_url('admin/dist/img/AdminLTELogo.png') ?>" alt="AdminLTELogo" height="60" width="60">
-        </div>
+    ?>
 
-        <!-- Navbar -->
-        <?= $this->include('components/admin/navbar'); ?>
-
-        <!-- /.navbar -->
-
-        <!-- Main Sidebar Container -->
-        <?= $this->include('components/admin/sidebar'); ?>
-
-
-        <!-- Content Wrapper. Contains page content -->
-        <?= $this->include('components/admin/content_wrapper'); ?>
 
         <!-- /.content-wrapper -->
-        <div class="content-wrapper">
+        <div class="content-wrapper p-5">
             <!-- Content Header (Page header) -->
             <div class="content-header">
                 <div class="container-fluid">
@@ -60,7 +46,7 @@
             </div>
         <?php endif; ?>
 
-                    <table class="table table-striped table-bordered table-hover">
+                    <table class="table table-striped table-bordered table-hover scholarlist" id="tbl">
                     <thead class="table-primary">
                         <tr>
                             <th scope="col">#</th>
@@ -80,11 +66,14 @@
                             <td><?= $s['firstname'] ?> <?= $s['lastname'] ?></td>
                             <td><?= $s['age'] ?></td>
                             <td><?= $s['gender'] ?></td>
-                            <td><?= $s['street'] . ', ' . $s['barangay'] . ', ' . $s['city'] . ', ' . $s['province'] ?></td>
+                            <td><?= $s['address'] ?></td>
                             <td><?= $s['email'] ?></td>
                             <td>
                             <a href="<?= base_url('admin/edit-scholar/' . $s['scholar_id']) ?>"class="btn btn-success">Edit</a>
-                            <a href="<?= base_url('admin/delete-scholar/' . $s['scholar_id']) ?>" class="btn btn-danger">Delete</a>
+                            <!-- <a href="<?= base_url('admin/delete-scholar/' . $s['scholar_id']) ?>" class="btn btn-danger">Delete</a> -->
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="<?= $s['scholar_id'] ?>">
+  Delete Item
+</button>
                             </td>
                         </tr>
                         <?php $i++; ?>
@@ -92,7 +81,7 @@
                 </tbody>  
             </table>
                         
-                </div><!-- /.container-fluid -->
+                </div>
             </section>
         </div>
 
@@ -100,11 +89,24 @@
 
         <!-- /.control-sidebar -->
     </div>
-    <!-- ./wrapper -->
-
-    <!-- jQuery -->
+    
+    <?php 
+    $res["content"] = [
+        "id"=>"deleteModal",
+        "title"=>"Delete Confirmation",
+        "message"=>" Are you sure you want to delete this item?",
+        "type"=>"delete",
+        "action"=>"admin/delete-scholar/"
+    ];
+    echo view('components/Modal',$res); ?>
     <?= $this->include('components/admin/script'); ?>
 
+
+    <script>
+$("#tbl").on("click",".btn-danger", function() {
+    $("#hiddenID").val($(this).data("id"))
+})
+        </script>
 </body>
 
 </html>

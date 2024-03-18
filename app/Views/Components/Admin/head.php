@@ -1,28 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="<?php echo base_url("public/res/assets/images/owwa.png") ?>">
   <title>AdminLTE 3 | Dashboard</title>
 
-  
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?= base_url('admin/plugins/fontawesome-free/css/all.min.css') ?>">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="<?= base_url('admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')?>">
-  <!-- iCheck -->
-  <link rel="stylesheet" href="<?= base_url('admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css')?>">
-  <!-- JQVMap -->
-  <link rel="stylesheet" href="<?= base_url('admin/plugins/jqvmap/jqvmap.min.css')?>">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="<?= base_url('admin/dist/css/adminlte.min.css')?>">
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="<?= base_url('admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')?>">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="<?= base_url('admin/plugins/daterangepicker/daterangepicker.css')?>">
-  <!-- summernote -->
-  <link rel="stylesheet" href="<?= base_url('admin/plugins/summernote/summernote-bs4.min.css')?>">
+	<link href='<?php echo base_url('public/res/assets/css/bootstrap/bootstrap.min.css'); ?>' rel="stylesheet" />
+  <link rel="stylesheet" href="<?php echo base_url('public/res/assets/css/font-awesome/font-awesome.min.css')?>"/>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link href="<?php echo base_url('public/res/assets/scholarMenu/assets/css/material-dashboard.css?v=2.1.1') ?>" rel="stylesheet" />
+  <link href="<?php echo base_url('public/res/assets/scholarMenu/assets/demo/demo.css')?>" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-wysiwyg/0.3.3/bootstrap3-wysihtml5.min.css" integrity="sha512-Bhi4560umtRBUEJCTIJoNDS6ssVIls7oiYyT3PbhxZV+9uBbLVO/mWo56hrBNNbIfMXKvtIPJi/Jg+vpBpA7sg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="<?php echo base_url("/assets/js/summernote/summernote-bs4.css") ?>">
 </head>
+
 
