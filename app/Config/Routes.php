@@ -7,9 +7,19 @@ use CodeIgniter\Router\RouteCollection;
  */
 // $routes->get('/home', 'Home::home');
 // $routes->get('/about', 'Home::about');
-$routes->get('/home', 'Home::home');
+// $routes->get('/home', 'Home::home');
 
+$routes->group('home', static function ($routes) {
+    $routes->get('login', 'Authentication::login');
+    $routes->get('forgot-password', 'Authentication::verification');
+    $routes->get('otp','Authentication::otp');
+});
+$routes->group('auth', static function ($routes) {
+    $routes->post('log', 'AuthPost::log');
+    $routes->post('send', 'AuthPost::sendVerification');
+    $routes->post('verify', 'AuthPost::verificationCode');
 
+});
 
 $routes->group('admin', static function ($routes) {
     $routes->get('dashboard', 'Admin\DashboardController::index');

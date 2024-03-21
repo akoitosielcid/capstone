@@ -55,4 +55,29 @@ abstract class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
     }
+    public function requester() {
+        // Your common functionality here       
+        $request = service('request');
+
+    // Get the raw body content as a stream   
+    $rawBody = $request->getBody();
+
+    // Now you can parse the raw body as needed
+    // For example, if it's JSON, you can decode it
+    $data = json_decode($rawBody);
+    $rawBody = trim($rawBody, "'");
+
+    // Split the string by colon to separate key and value
+    $parts = explode(':', $rawBody);
+
+    return $parts;
+    }
+    public function generateRandomString($length = 6) {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, strlen($characters) - 1)];
+        }
+        return $randomString;
+    }
 }
