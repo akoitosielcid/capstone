@@ -21,32 +21,32 @@ $routes->group('auth', static function ($routes) {
 
 });
 
-$routes->group('admin', static function ($routes) {
-    $routes->get('dashboard', 'Admin\DashboardController::index');
-    $routes->get('announcements', 'Admin\AnnouncementController::index');
-    $routes->get('add-announcements', 'Admin\AnnouncementController::create');
-    $routes->post('store', 'Admin\AnnouncementController::store');
-    $routes->get('edit-announcement/(:num)', 'Admin\AnnouncementController::edit/$1');
-    $routes->post('update-announcement', 'Admin\AnnouncementController::update');
-    $routes->get('delete-announcement/(:num)', 'Admin\AnnouncementController::delete/$1');
+// $routes->group('admin', static function ($routes) {
+//     $routes->get('dashboard', 'Admin\DashboardController::index');
+//     $routes->get('announcements', 'Admin\AnnouncementController::index');
+//     $routes->get('add-announcements', 'Admin\AnnouncementController::create');
+//     $routes->post('store', 'Admin\AnnouncementController::store');
+//     $routes->get('edit-announcement/(:num)', 'Admin\AnnouncementController::edit/$1');
+//     $routes->post('update-announcement', 'Admin\AnnouncementController::update');
+//     $routes->get('delete-announcement/(:num)', 'Admin\AnnouncementController::delete/$1');
 
-    $routes->get('scholars', 'Admin\ScholarInfoController::index');
-    $routes->get('add-scholars', 'Admin\ScholarInfoController::create');
-    $routes->post('store-scholar', 'Admin\ScholarInfoController::store');
-    $routes->get('edit-scholar/(:num)', 'Admin\ScholarInfoController::edit/$1');
-    $routes->post('update-scholar', 'Admin\ScholarInfoController::update');
-    $routes->get('delete-scholar/(:num)', 'Admin\ScholarInfoController::delete/$1');
+//     $routes->get('scholars', 'Admin\ScholarInfoController::index');
+//     $routes->get('add-scholars', 'Admin\ScholarInfoController::create');
+//     $routes->post('store-scholar', 'Admin\ScholarInfoController::store');
+//     $routes->get('edit-scholar/(:num)', 'Admin\ScholarInfoController::edit/$1');
+//     $routes->post('update-scholar', 'Admin\ScholarInfoController::update');
+//     $routes->get('delete-scholar/(:num)', 'Admin\ScholarInfoController::delete/$1');
 
 
 
     // $routes->get('edit/(:num)', 'Products::edit/$1');
     // $routes->post('update', 'Products::update');
     // $routes->get('delete/(:num)', 'Products::delete/$1');
-});
+// });
 
-$routes->group('admin2', static function ($routes) {
-    // $routes->get('dashboard', 'Admin\DashboardController::index');
-    $routes->get('dashboard', 'Admin\Announcement::index2');
+$routes->group('admin', static function ($routes) {
+    $routes->get('dashboard', 'Admin\DashboardController::index');
+    // $routes->get('dashboard', 'Admin\Announcement::index2');
     $routes->get('announcements', 'Admin\AnnouncementController::index');
     $routes->get('add-announcements', 'Admin\AnnouncementController::create');
     $routes->post('store', 'Admin\AnnouncementController::store');

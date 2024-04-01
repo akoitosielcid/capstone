@@ -1,0 +1,1328 @@
+ERROR - 2024-04-01 08:15:53 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:15:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:15:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:15:53 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 08:15:55 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:15:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:15:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:15:55 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 08:15:56 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:15:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:15:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:15:56 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 08:15:56 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:15:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:15:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:15:56 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 08:15:56 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:15:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:15:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:15:56 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 08:15:56 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:15:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:15:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:15:56 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = \'\'
+AND `account_password` = \'\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `username` = :username:
+AND `account_password` = :account_password:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(22): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->log()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 08:40:08 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:40:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:08 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 08:40:09 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:40:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:09 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 08:40:09 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:40:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:09 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 08:40:09 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:40:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:09 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 08:40:10 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:40:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:10 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 08:40:10 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:40:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:10 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 08:40:12 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:40:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:12 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 08:40:12 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:40:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:12 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 08:40:13 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:40:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:13 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 08:40:13 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:40:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:13 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 08:40:13 --> mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 08:40:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 08:40:13 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.user_acc' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = \'mamanaoelcid@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user_acc`
+WHERE `email` = :email:', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\AuthPost.php(53): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthPost->sendVerification()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthPost))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 11:27:17 --> mysqli_sql_exception: Table 'db_scholar.scholar_info' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\Admin\DashboardController.php(25): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\Admin\DashboardController->index()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DashboardController))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 11:27:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.scholar_info' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = :graduate:
+OR `graduate` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Admin\DashboardController.php(25): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\DashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 11:27:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.scholar_info' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = \'no\'
+OR `graduate` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = \'no\'
+OR `graduate` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = :graduate:
+OR `graduate` IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Admin\DashboardController.php(25): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 11:27:17 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.scholar_info' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = \'no\'
+OR `graduate` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = \'no\'
+OR `graduate` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = \'no\'
+OR `graduate` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = :graduate:
+OR `graduate` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Admin\DashboardController.php(25): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\DashboardController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DashboardController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 11:30:31 --> mysqli_sql_exception: Table 'db_scholar.scholar_info' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\Admin\DashboardController.php(25): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\Admin\DashboardController->index()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DashboardController))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 11:30:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.scholar_info' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = :graduate:
+OR `graduate` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Admin\DashboardController.php(25): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\DashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 11:30:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_scholar.scholar_info' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = \'no\'
+OR `graduate` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = \'no\'
+OR `graduate` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = :graduate:
+OR `graduate` IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Admin\DashboardController.php(25): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 11:30:31 --> [Caused by] mysqli_sql_exception: Table 'db_scholar.scholar_info' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = \'no\'
+OR `graduate` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = \'no\'
+OR `graduate` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = \'no\'
+OR `graduate` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = :graduate:
+OR `graduate` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Admin\DashboardController.php(25): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\DashboardController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DashboardController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-01 11:31:52 --> mysqli_sql_exception: Table 'owwa_db.scholar_info' doesn't exist in C:\laragon\www\capstone\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\capstone\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\capstone\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\capstone\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\capstone\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\capstone\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\capstone\app\Controllers\Admin\DashboardController.php(25): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\capstone\system\CodeIgniter.php(941): App\Controllers\Admin\DashboardController->index()
+#7 C:\laragon\www\capstone\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DashboardController))
+#8 C:\laragon\www\capstone\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\capstone\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-01 11:31:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'owwa_db.scholar_info' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = :graduate:
+OR `graduate` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Admin\DashboardController.php(25): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\DashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 11:31:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'owwa_db.scholar_info' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = \'no\'
+OR `graduate` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = \'no\'
+OR `graduate` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = :graduate:
+OR `graduate` IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Admin\DashboardController.php(25): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 11:31:52 --> [Caused by] mysqli_sql_exception: Table 'owwa_db.scholar_info' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = \'no\'
+OR `graduate` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = \'no\'
+OR `graduate` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = \'no\'
+OR `graduate` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `scholar_info`
+WHERE `graduate` = :graduate:
+OR `graduate` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Admin\DashboardController.php(25): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\DashboardController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DashboardController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 11:33:08 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Admin\DashboardController.php on line 41.
+ 1 APPPATH\Controllers\Admin\DashboardController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\capstone\\app\\Controllers\\Admin\\DashboardController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 11:33:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/admin/apps/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/admin/apps/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/admin/apps/dashboard', [], true)
+ 3 APPPATH\Controllers\Admin\DashboardController.php(41): view('pages/admin/apps/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\DashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 11:34:19 --> ErrorException: Undefined variable $row
+in APPPATH\Views\Pages\admin\apps\dashboard\dashboard.php on line 291.
+ 1 APPPATH\Views\Pages\admin\apps\dashboard\dashboard.php(291): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\laragon\\www\\capstone\\app\\Views\\Pages\\admin\\apps\\dashboard\\dashboard.php', 291)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\capstone\\app\\Views\\Pages\\admin\\apps\\dashboard\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/admin/apps/dashboard/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin\DashboardController.php(41): view('pages/admin/apps/dashboard/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-01 11:56:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/admin/apps/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/admin/apps/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/admin/apps/dashboard', [], true)
+ 3 APPPATH\Controllers\Admin\DashboardController.php(41): view('pages/admin/apps/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Admin\DashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
